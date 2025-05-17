@@ -1,0 +1,27 @@
+.menu-fixo {
+    top: 70px;
+    position: relative;
+    z-index: 1001;
+}
+
+.recomendacoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    height: 32px;
+    min-width: 12px;
+    font-size: 0.9em;
+    line-height: 2em;
+    font-weight: 400;
+    user-select: none;
+}
+
+.recomendacoes p {
+    padding: 0 0.8em;
+    cursor: pointer;
+    color: #fff;
+}
