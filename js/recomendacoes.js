@@ -6,7 +6,14 @@ const listaDeRecomendacoes = [
     "Desenvolvimento Web",
     "Sistema de Informação",
     "Videos curtos",
-    "Ao Vivo"
+    "Ao Vivo",
+    "Filmes",
+    "Séries",
+    "Desenhos",
+    "Desenvolvimento Web",
+    "Sistema de Informação",
+    "Videos curtos",
+    "Ao Vivo",
 ];
 
 const recomendacoesElement = document.getElementById('recomendacoes');

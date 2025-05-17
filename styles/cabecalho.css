@@ -25,6 +25,13 @@
     align-items: center;
 }
 
+.inicio-cabecalho a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Define tamanho da logo */
 .logo {
     width: 100px;
