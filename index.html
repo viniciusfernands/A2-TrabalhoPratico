@@ -7,34 +7,64 @@
     <title>A2 - YouTube</title>
     <link rel="shortcut icon" href="./assets/images/icons8-youtube.svg" type="image/x-icon">
     <!-- Css -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/cabecalho.css">
+    <!-- Fontes personalizadas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <div>
+        <div class="container-cabecalho">
             <!-- Container da logo -->
-            <div>
+            <div class="inicio-cabecalho">
+                <a class="bar-cabecalho">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </a>
                 <a href="./index.html">
                     <img src="./assets/images/youtube.svg" alt="Logo YouTube" class="logo">
                 </a>
             </div>
 
             <!-- Barra de pesquisa -->
-            <div>
-                
+            <div class="meio-cabecalho">
+                <!-- Encapsula input + teclado virtual -->
+                <div class="container-pesquisa">
+                    <input type="text" name="pesquisa" class="pesquisa" placeholder="Pesquisar">
+                    <a><i class="fa-solid fa-keyboard"></i></a>
+                </div>
+                <button class="botao-pesquisa"><i class="fa-solid fa-magnifying-glass fa-xl"
+                        style="color: #ffffff;"></i></button>
+                <a class="falar-pesquisa"><i class="fa-solid fa-microphone" style="color: #ffffff;"></i></a>
             </div>
 
-            <!-- Seção de usuario -->
-            <div>
 
+            <!-- Seção de usuario -->
+            <div class="fim-cabecalho">
+                <div>
+                    <a class="criar">
+                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                        <p>Criar</p>
+                    </a>
+                </div>
+                <div class="notificacao">
+                    <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
+                </div>
+                <div class="usuario">
+                    <p>U</p>
+                </div>
             </div>
         </div>
 
         <!-- Recomendações -->
         <div>
-
         </div>
     </header>
 

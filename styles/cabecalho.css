@@ -1,0 +1,138 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background: rgb(15 15 15 / 80%);
+    backdrop-filter: blur(48px);
+    height: 112px;
+}
+
+/* Define como a parte de cima do cabeçalho ira se comportar */
+.container-cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 0 16px;
+}
+
+.inicio-cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define tamanho da logo */
+.logo {
+    width: 100px;
+    height: 20px;
+}
+
+.bar-cabecalho {
+    margin: 0 20px;
+    font-size: 1.2em;
+}
+
+.meio-cabecalho {
+    display: flex;
+    flex-direction: row;
+    min-width: 0;
+    flex: 0 1 750px;
+    align-items: center;
+}
+
+/* Define como sera o encapsulamento do input + teclado virtual */
+.container-pesquisa {
+    border: 1px solid hsl(0, 0%, 18.82%);
+    background-color: hsl(0, 0, 7%);
+    box-shadow: none;
+    height: 40px;
+    border-radius: 40px 0 0 40px;
+    border-right: 0;
+    margin-left: 32px;
+    padding: 0 8px 0 16px;
+    display: flex;
+    flex: 1;
+    cursor: text;
+    position: relative;
+    align-items: center;
+}
+
+.container-pesquisa a {
+    cursor: pointer;
+}
+
+.pesquisa {
+    border: none;
+    padding: 1px 0;
+    width: 100%;
+    box-shadow: none;
+    font-size: 1.1em;
+    line-height: 2.2em;
+    background-color: transparent;
+    color: #fff;
+    flex: 1;
+}
+
+.pesquisa:focus {
+    outline: none;
+}
+
+.fa-solid {
+    color: #fff;
+}
+
+.botao-pesquisa {
+    border: 1px solid hsl(0, 0%, 18.82%);
+    background-color: transparent;
+    width: 64px;
+    border-radius: 0 40px 40px 0;
+    cursor: pointer;
+    height: 3em;
+}
+
+.falar-pesquisa {
+    margin-left: 20px;
+    font-size: 1.2em;
+}
+
+.fim-cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.criar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.criar p {
+    padding: 0 10px;
+}
+
+.notificacao {
+    margin: 0 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.usuario {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: aqua;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
