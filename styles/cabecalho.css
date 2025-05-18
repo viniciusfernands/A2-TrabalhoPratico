@@ -41,6 +41,7 @@
 .bar-cabecalho {
     margin: 0 20px;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 .meio-cabecalho {
@@ -104,6 +105,7 @@
 .falar-pesquisa {
     margin-left: 20px;
     font-size: 1.2em;
+    cursor: pointer;
 }
 
 .fim-cabecalho {

@@ -1,20 +1,4 @@
-const listaDeRecomendacoes = [
-    "Todos",
-    "Filmes",
-    "Séries",
-    "Desenhos",
-    "Desenvolvimento Web",
-    "Sistema de Informação",
-    "Videos curtos",
-    "Ao Vivo",
-    "Filmes",
-    "Séries",
-    "Desenhos",
-    "Desenvolvimento Web",
-    "Sistema de Informação",
-    "Videos curtos",
-    "Ao Vivo",
-];
+import { listaDeRecomendacoes } from './informacoes/listaDeRecomendacoes.js';
 
 const recomendacoesElement = document.getElementById('recomendacoes');
 

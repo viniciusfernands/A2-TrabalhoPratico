@@ -1,0 +1,17 @@
+export const listaDeRecomendacoes = [
+    "Todos",
+    "Filmes",
+    "Séries",
+    "Desenhos",
+    "Desenvolvimento Web",
+    "Sistema de Informação",
+    "Videos curtos",
+    "Ao Vivo",
+    "Filmes",
+    "Séries",
+    "Desenhos",
+    "Desenvolvimento Web",
+    "Sistema de Informação",
+    "Videos curtos",
+    "Ao Vivo",
+];
