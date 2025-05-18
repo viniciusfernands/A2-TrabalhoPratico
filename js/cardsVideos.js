@@ -3,7 +3,7 @@ import { cards } from './informacoes/cards.js';
 const videoCards = document.getElementById('video-cards');
 
 function gerarElementos() {
-    cards.map((video) => {
+    cards.forEach((video) => {
         // Cria uma div que vai receber todas as informações do video
         let divFather = document.createElement('div');
 

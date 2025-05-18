@@ -3,7 +3,7 @@ import { menuLateral } from './informacoes/menuLateral.js';
 const menuLateralElement = document.getElementById('menu-lateral');
 
 function gerarElementos() {
-    menuLateral.map((menu) => {
+    menuLateral.forEach((menu) => {
         let divFather = document.createElement('div');
         let divTagElement = document.createElement('div');
         let pTagElement = document.createElement('p');
