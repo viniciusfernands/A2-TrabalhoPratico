@@ -1,4 +1,4 @@
-/* Container geral de todos os cards */
+/* Container geral de todos os cards de vídeo */
 .video-cards {
     padding-top: 72px;
     display: flex;
@@ -9,7 +9,7 @@
     position: relative;
 }
 
-/* Container de cards individuias */
+/* Container de cada card individual */
 .cards-container {
     display: flex;
     flex-direction: column;
@@ -21,51 +21,56 @@
     transition: transform 0.2s;
 }
 
+/* Efeito ao passar o mouse no card */
 .cards-container:hover {
     transform: scale(1.02);
     background-color: hsl(0, 0%, 18.82%);
 
 }
 
-/* Container da Thumbnail + Tempo + Carregamento */
+/* Container da thumbnail, tempo e carregamento */
 .container-thumbnail {
     position: relative;
     display: inline-block;
 }
 
+/* Exibe o carregamento ao passar o mouse na thumbnail */
 .container-thumbnail:hover .carregamento {
-    display: block; /* Torna o .carregamento visivel ao usar hover sobre o container da thumbnail */
+    display: block; /* Exibe o elemento na tela */
 }
 
 .carregamento {
   display: none; /* Deixa o elemento invisivel na tela */
-  position: absolute;
+  position: absolute;  /* Posiciona o elemento em relação ao container */
   top: 50%;
   left: 50%;
   width: 60px;
   height: 60px;
-  margin: -30px 0 0 -30px;
+  margin: -30px 0 0 -30px;  /* Centraliza o elemento */
   border: 3.5px solid red;
   border-top: 3.5px solid pink;
   border-radius: 50%;
-  animation: carregamento ease 1s infinite; /* Adiciona una animação  */
-  pointer-events: none; /*  */
+  animation: carregamento ease 1s infinite; /* Adiciona uma animação */
+  pointer-events: none; /* Ignora eventos de mouse */
 }
 
+/* Animação do carregamento */
 @keyframes carregamento {
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg);  /* Gira o elemento */
   }
 }
 
+/* Imagem da thumbnail */
 .card-thumbnail {
     width: 100%;
     display: block;
     transition: filter 0.3s ease;
 }
 
+/* Efeito de desfoque ao passar o mouse */
 .card-thumbnail:hover {
-    filter: blur(4px)
+    filter: blur(4px);
 }
 
 .card-tempo-video {
@@ -80,6 +85,7 @@
     font-weight: 400;
 }
 
+/* Container das informações do card (ícone, título, etc) */
 .card-resumo {
     display: flex;
     padding: 12px;
@@ -87,24 +93,28 @@
     width: 100%;
 }
 
+/* Informações textuais do card */
 .card-informacoes {
     display: flex;
     flex-direction: column-reverse;
     width: 100%;
 }
 
+/* Ícone do canal */
 .card-icone {
     width: 36px;
     height: 36px;
     border-radius: 50%;
 }
 
+/* Título do vídeo */
 .card-titulo {
     font-size: 16px;
     font-weight: bold;
     color: #fff;
 }
 
+/* Outras informações (nome do canal, visualizações, tempo) */
 .card-outras-informacoes {
     display: flex;
     flex-direction: column;
@@ -113,11 +123,13 @@
     margin-top: 4px;
 }
 
+/* Linha de visualizações e tempo */
 .card-tempo-visualizacao {
     display: flex;
     gap: 8px;
 }
 
+/* Visualizações: oculta overflow de texto */
 .card-visualizacao {
     overflow: hidden;
 }
