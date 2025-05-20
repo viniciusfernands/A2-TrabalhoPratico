@@ -1,13 +1,15 @@
+/* Container geral de todos os cards */
 .video-cards {
     padding-top: 72px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 26px;
     position: relative;
 }
 
+/* Container de cards individuias */
 .cards-container {
     display: flex;
     flex-direction: column;
@@ -25,13 +27,45 @@
 
 }
 
+/* Container da Thumbnail + Tempo + Carregamento */
 .container-thumbnail {
     position: relative;
+    display: inline-block;
+}
+
+.container-thumbnail:hover .carregamento {
+    display: block; /* Torna o .carregamento visivel ao usar hover sobre o container da thumbnail */
+}
+
+.carregamento {
+  display: none; /* Deixa o elemento invisivel na tela */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  border: 3.5px solid red;
+  border-top: 3.5px solid pink;
+  border-radius: 50%;
+  animation: carregamento ease 1s infinite; /* Adiciona una animação  */
+  pointer-events: none; /*  */
+}
+
+@keyframes carregamento {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .card-thumbnail {
     width: 100%;
     display: block;
+    transition: filter 0.3s ease;
+}
+
+.card-thumbnail:hover {
+    filter: blur(4px)
 }
 
 .card-tempo-video {

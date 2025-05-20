@@ -11,6 +11,7 @@ function gerarElementos() {
         let divThumbTempo = document.createElement('div');
         let imgThumb = document.createElement('img');
         let pTempo = document.createElement('p');
+        let divCarregamento = document.createElement('div');
 
         // Cria uma div que vai receber as informaçõe complementares do video como Icone do canal, Titulo, Nome do Canal, Visualizações e Tempo de Publicação
         let divInfos = document.createElement('div');
@@ -32,6 +33,7 @@ function gerarElementos() {
         imgThumb.classList.add('card-thumbnail');
         pTempo.innerText = video.TempoDeVideo;
         pTempo.classList.add('card-tempo-video');
+        divCarregamento.classList.add('carregamento');
 
         // Coloca as informações da variavel cards dentro de Icone, Titulo, Nome do canal, Visualizações e Tempo de Publicação / Também cria classes para serem usadas no css
         imgIcone.src = video.IconeCanal;
@@ -48,6 +50,7 @@ function gerarElementos() {
 
         divThumbTempo.appendChild(imgThumb);
         divThumbTempo.appendChild(pTempo);
+       divThumbTempo.appendChild(divCarregamento); 
         divThumbTempo.classList.add('container-thumbnail');
 
         divOutrasInfos.appendChild(pNomeCanal);
