@@ -1,3 +1,4 @@
+/* Menu fixo no topo da tela, alinhado à direita */
 .menu-fixo {
     position: fixed;
     z-index: 1001;
@@ -7,6 +8,7 @@
     padding: 0 12px;
 }
 
+/* Container das recomendações */
 .recomendacoes {
     display: flex;
     flex-direction: row;
@@ -42,6 +44,7 @@
     top: 56px;
 }
 
+/* Container de cada item do menu lateral */
 .container-lateral {
     padding: 20px 0;
     width: 64px;
@@ -54,12 +57,14 @@
     white-space: nowrap;
 }
 
+/* Ícone do menu lateral */
 .icone-lateral {
     width: 24px;
     height: 24px;
     margin-bottom: 6px;
 }
 
+/* Texto do menu lateral */
 .texto-lateral {
     padding: 0 0.8em;
     color: #fff;

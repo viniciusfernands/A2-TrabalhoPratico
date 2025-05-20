@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A2 - YouTube</title>
+    <!-- Ícone da aba do navegador -->
     <link rel="shortcut icon" href="./assets/images/icons8-youtube.svg" type="image/x-icon">
-    <!-- Css -->
+    <!-- Importação dos arquivos CSS do projeto -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/cabecalho.css">
     <link rel="stylesheet" href="./styles/menuFixo.css">
     <link rel="stylesheet" href="./styles/cardVideo.css">
-    <!-- Fontes personalizadas -->
+    <!-- Fontes e ícones externos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,10 +23,10 @@
 </head>
 
 <body>
-    <!-- Cabeçalho -->
+    <!-- Cabeçalho principal do site -->
     <header class="cabecalho">
         <div class="container-cabecalho">
-            <!-- Container da logo -->
+            <!-- Container da logo e menu hamburguer -->
             <div class="inicio-cabecalho">
                 <a class="bar-cabecalho">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
@@ -35,56 +36,53 @@
                 </a>
             </div>
 
-            <!-- Barra de pesquisa -->
+            <!-- Barra de pesquisa central do cabeçalho -->
             <div class="meio-cabecalho">
-                <!-- Encapsula input + teclado virtual -->
+                <!-- Input de pesquisa e ícone de teclado -->
                 <div class="container-pesquisa">
                     <input type="text" name="pesquisa" class="pesquisa" placeholder="Pesquisar">
                     <a><i class="fa-solid fa-keyboard"></i></a>
                 </div>
+                <!-- Botão de pesquisa com ícone de lupa -->
                 <button class="botao-pesquisa"><i class="fa-solid fa-magnifying-glass fa-xl"
                         style="color: #ffffff;"></i></button>
+                <!-- Ícone de microfone para pesquisa por voz -->
                 <a class="falar-pesquisa"><i class="fa-solid fa-microphone" style="color: #ffffff;"></i></a>
             </div>
 
-
-            <!-- Seção de usuario -->
+            <!-- Seção de usuário: criar, notificações e avatar -->
             <div class="fim-cabecalho">
-                <div>
-                    <a class="criar">
-                        <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
-                        <p>Criar</p>
-                    </a>
-                </div>
-                <div class="notificacao">
+                <button class="criar" type="button">
+                    <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                    <span>Criar</span>
+                </button>
+                <button class="notificacao" type="button" aria-label="Notificações">
                     <i class="fa-regular fa-bell" style="color: #ffffff;"></i>
-                </div>
-                <div class="usuario">
-                    <p>U</p>
+                </button>
+                <div class="usuario" title="Usuário">
+                    <span>U</span>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <!-- Menu lateral -->
-        <div id="menu-lateral" class="menu-lateral">
-            <script type="module" src="./js/lateral.js"></script>
-        </div>
-        <!-- Corpo principal -->
-        <div class="corpo-principal">
-            <div class="menu-fixo">
-                <!-- Recomendações -->
-                <div id="recomendacoes" class="recomendacoes">
-                    <script type="module" src="./js/recomendacoes.js"></script>
-                </div>
-            </div>
-            <!-- Cards dos videos -->
-            <div id="video-cards" class="video-cards">
-                <script type="module" src="./js/cardsVideos.js"></script>
-            </div>
-        </div>
+        <!-- Menu lateral fixo à esquerda -->
+        <nav id="menu-lateral" class="menu-lateral"></nav>
+        <!-- Corpo principal do conteúdo -->
+        <section class="corpo-principal">
+            <nav class="menu-fixo">
+                <!-- Recomendações de navegação -->
+                <div id="recomendacoes" class="recomendacoes"></div>
+            </nav>
+            <!-- Cards dos vídeos exibidos na página -->
+            <section id="video-cards" class="video-cards"></section>
+        </section>
     </main>
+
+    <script type="module" src="./js/lateral.js"></script>
+    <script type="module" src="./js/recomendacoes.js"></script>
+    <script type="module" src="./js/cardsVideos.js"></script>
 </body>
 
 </html>

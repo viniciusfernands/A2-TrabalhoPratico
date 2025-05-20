@@ -114,23 +114,24 @@
     align-items: center;
 }
 
-.criar {
+.criar,
+.notificacao {
     display: flex;
     flex-direction: row;
     align-items: center;
     color: #fff;
     justify-content: space-between;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
-.criar p {
-    padding: 0 10px;
-}
-
-.notificacao {
-    margin: 0 20px;
-    font-size: 1.2em;
-    cursor: pointer;
+.criar i,
+.notificacao i {
+    margin-right: 8px;
 }
 
 .usuario {
